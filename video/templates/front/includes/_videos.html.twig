@@ -1,0 +1,91 @@
+
+<div class="row">
+
+    {% for video in videos %}
+
+
+        {% if video_no_members is not null %}
+
+{#            {% set videoid = 'https://player.vimeo.com/video/' ~video_no_members %}#}
+
+            {% set videoid = video_no_members %}
+
+        {% else %}
+
+{#            {% set videoid = video.vimeoid %}#}
+
+            {% set videoid = video.path %}
+
+        {% endif %}
+
+
+
+
+        <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+                <div align="center" class="embed-responsive embed-responsive-16by9">
+
+                    <iframe class="" src="{{ video.vimeoid(app.user) }}" frameborder="0"
+                            allowfullscreen></iframe>
+
+                </div>
+                <div class="card-body">
+                    <h3>{{ video.getTitle() }}</h3>
+
+{#                    {% if not app.user %}#}
+
+                    {% if not app.user or video_no_members is not null %}
+
+                        <p class="card-text text-danger">Video for <b>MEMBERS</b> only. <a href="{{ path('pricing') }}">Sign up</a> for one month for free.</p>
+
+                    {% endif %}
+
+
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+
+                            <i class="fa fa-thumbs-up"><small class="text-muted number-of-likes-{{ video.id }}">({{ video.usersThatLike.count }})</small></i>&nbsp;
+                            <i class="fa fa-thumbs-down"><small class="text-muted number-of-dislikes-{{ video.id }}">({{ video.usersDontLike.count }})</small></i>
+
+                            {% if is_granted('IS_AUTHENTICATED_REMEMBERED') %}
+
+                            {{ include('front/includes/_likes.html.twig', {'video': video}) }}
+
+                            {% endif %}
+
+                            <a href="{{ path('video_details',{'video':video.id}) }}#video_comments">Comments ({{ video.comments.count }})</a>
+                        </div>
+                        <small class="text-muted">{{ video.getDuration() }} mins</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    {% endfor %}
+
+    <!-- no members -->
+{#    <div class="col-md-4">#}
+{#        <div class="card mb-4 shadow-sm">#}
+{#            <div align="center" class="embed-responsive embed-responsive-16by9">#}
+{#                <iframe class="" src="https://player.vimeo.com/video/113716040" frameborder="0"#}
+{#                        allowfullscreen></iframe>#}
+{#            </div>#}
+{#            <div class="card-body">#}
+{#                <h3>Video title</h3>#}
+{#                <p class="card-text text-danger">Video for <b>MEMBERS</b> only. <a href="pricing.html.twig">Sign#}
+{#                        up</a> for one month for free.</p>#}
+{#                <div class="d-flex justify-content-between align-items-center">#}
+{#                    <div class="btn-group">#}
+
+{#                        <i class="fa fa-thumbs-up mr-2"><small class="text-muted">(23)</small></i>#}
+{#                        <i class="fa fa-thumbs-down mr-2"><small class="text-muted">(9)</small></i>#}
+
+{#                        <a href="{{ path('video_details') }}#video_comments">Comments (32)</a>#}
+{#                    </div>#}
+{#                    <small class="text-muted">9 mins</small>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{#    </div>#}
+
+</div>

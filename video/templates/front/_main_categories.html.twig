@@ -1,0 +1,13 @@
+
+{#<a class="p-2 text-dark" href="{{ path('video_list') }}">Funny</a>#}
+{#<a class="p-2 text-dark" href="{{ path('video_list') }}">Scary</a>#}
+{#<a class="p-2 text-dark" href="{{ path('video_list') }}">Unbelievable</a>#}
+{#<a class="p-2 text-dark" href="{{ path('video_list') }}">Inspirational</a>#}
+{#<a class="p-2 text-dark" href="{{ path('video_list') }}">Motivating</a>#}
+{#<a class="p-2 text-dark" href="{{ path('admin_main_page') }}">My account</a>#}
+
+{% for category in categories %}
+
+    <a class="p-2 text-dark" href="{{ path('video_list', {'categoryname':category.name|lower|slugify, 'id':category.id}) }}">{{ category.name }}</a>
+
+{% endfor %}

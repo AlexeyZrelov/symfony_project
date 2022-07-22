@@ -1,0 +1,85 @@
+{% extends 'base.html.twig' %}
+
+{% block customstylesheets %}
+{{ parent() }}
+{% if app.user %}
+    <link rel="stylesheet" href="{{ asset('assets/css/likes.css') }}">
+{% endif %}
+{% endblock %}
+
+{% block main %}
+
+<main role="main">
+{#{{ dump(subcategories.currentCategoryName) }}#}
+    <section class="jumbotron text-center">
+        <div class="container">
+
+            <h1 class="jumbotron-heading">Category - {{ subcategories.currentCategoryName }}</h1>
+            <div class="btn-group">
+                <div class="dropdown ml-2">
+                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Subcategories
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <ul class="mr-5">
+
+                            <li><a href="{{ path('video_list',{'categoryname':subcategories.mainParentName|slugify|lower, 'id':subcategories.mainParentId}) }}">{{ subcategories.mainParentName }}</a></li>
+
+                            {{ subcategories.categorylist|raw }}
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="form-row align-items-center ml-3">
+
+                    {{ include('front/includes/_sort.html.twig') }}
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="album py-5 bg-light">
+        <div class="container">
+
+            {{ include('front/includes/_videos.html.twig', {'videos' : videos}) }}
+
+        </div>
+    </div>
+
+    <!-- pagination -->
+{#    <nav aria-label="Page navigation example">#}
+{#        <ul class="pagination">#}
+{#            <li class="page-item">#}
+{#                <a class="page-link" href="#" aria-label="Previous">#}
+{#                    <span aria-hidden="true">&laquo;</span>#}
+{#                    <span class="sr-only">Previous</span>#}
+{#                </a>#}
+{#            </li>#}
+{#            <li class="page-item"><a class="page-link" href="#">1</a></li>#}
+{#            <li class="page-item active"><a class="page-link" href="#">2</a></li>#}
+{#            <li class="page-item"><a class="page-link" href="#">3</a></li>#}
+{#            <li class="page-item">#}
+{#                <a class="page-link" href="#" aria-label="Next">#}
+{#                    <span aria-hidden="true">&raquo;</span>#}
+{#                    <span class="sr-only">Next</span>#}
+{#                </a>#}
+{#            </li>#}
+{#        </ul>#}
+{#    </nav>#}
+
+    {{ knp_pagination_render(videos) }}
+
+
+</main>
+
+{% endblock %}
+
+{% block customjavascripts %}
+{{ parent() }}
+{% if app.user %}
+    <script src="{{ asset('assets/js/likes.js') }}"></script>
+{% endif %}
+{% endblock %}

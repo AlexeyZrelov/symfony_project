@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="beb8f93c-d91a-4ed0-b60a-37519c14d9df" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/warehouse-system/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/warehouse-system/vendor/symfony/flex" />
+      <path value="$PROJECT_DIR$/warehouse-system/vendor/symfony/cache-contracts" />
+      <path value="$PROJECT_DIR$/warehouse-system/vendor/symfony/error-handler" />
+      <path value="$PROJECT_DIR$/warehouse-system/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/warehouse-system/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/warehouse-system/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/warehouse-system/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/warehouse-system/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/warehouse-system/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/warehouse-system/vendor/symfony/dependency-injection" />
+      <path value="$PROJECT_DIR$/warehouse-system/vendor/symfony/var-exporter" />
+      <path value="$PROJECT_DIR$/warehouse-system/vendor/psr/event-dispatcher" />
+      <path value="$PROJECT_DIR$/warehouse-system/vendor/symfony/config" />
+      <path value="$PROJECT_DIR$/warehouse-system/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/warehouse-system/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/warehouse-system/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/warehouse-system/vendor/symfony/messenger" />
+      <path value="$PROJECT_DIR$/warehouse-system/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/warehouse-system/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/warehouse-system/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/warehouse-system/vendor/symfony/dotenv" />
+      <path value="$PROJECT_DIR$/warehouse-system/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/warehouse-system/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/warehouse-system/vendor/symfony/runtime" />
+      <path value="$PROJECT_DIR$/warehouse-system/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/warehouse-system/vendor/symfony/cache" />
+      <path value="$PROJECT_DIR$/warehouse-system/vendor/composer" />
+      <path value="$PROJECT_DIR$/warehouse-system/vendor/symfony/framework-bundle" />
+      <path value="$PROJECT_DIR$/warehouse-system/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/warehouse-system/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/warehouse-system/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/warehouse-system/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/warehouse-system/vendor/symfony/doctrine-messenger" />
+      <path value="$PROJECT_DIR$/warehouse-system/vendor/doctrine/event-manager" />
+      <path value="$PROJECT_DIR$/warehouse-system/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/warehouse-system/vendor/doctrine/deprecations" />
+      <path value="$PROJECT_DIR$/warehouse-system/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/warehouse-system/vendor/symfony/amqp-messenger" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="2CI0GJPP89od2dPgMlUN5BIkoRc" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/home/alex/symfony_project",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/sms-service1/src/MessageHandler/Command" />
+      <recent name="$PROJECT_DIR$/sms-service1/src/Message/Command" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="beb8f93c-d91a-4ed0-b60a-37519c14d9df" name="Changes" comment="" />
+      <created>1658474694830</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1658474694830</updated>
+      <workItem from="1658474695950" duration="675000" />
+      <workItem from="1658475497183" duration="12783000" />
+      <workItem from="1658503182251" duration="12000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

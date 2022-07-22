@@ -1,0 +1,8 @@
+controllers:
+    resource: ../src/Controller/
+    type: attribute
+
+upload_image:
+    path: /api/upload
+    controller: App\Controller\UploadFileController
+    methods: POST

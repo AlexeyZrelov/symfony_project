@@ -1,0 +1,63 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello DefaultController!{% endblock %}
+
+{#{% set users = [{name: 'Adam'}, {name: 'John'}, {name: 'Susan'}, {name: 'Robert'}] %}#}
+
+{% set string = "some string \n from \n database" %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<div class="example-wrapper">
+    <h1>Hello {{ controller_name }}! ✅</h1>
+
+    This friendly message is coming from:
+    <ul>
+        <li>Your controller at <code><a href="{{ '/home/alex/symfony_project/course/src/Controller/DefaultController.php'|file_link(0) }}">src/Controller/DefaultController.php</a></code></li>
+        <li>Your template at <code><a href="{{ '/home/alex/symfony_project/course/templates/default/index.html.twig'|file_link(0) }}">templates/default/index.html.twig</a></code></li>
+    </ul>
+
+    {# {{ form_theme form 'form_table_layout.html.twig' }} #}
+
+    {# {{ form_start(form) }}
+    {{ form_label(form.title) }}
+    {{ form_widget(form.title) }}
+
+    {% if form.created_at is defined%}
+    {{ form_label(form.created_at) }}
+    {{ form_widget(form.created_at) }}
+    {% endif %}
+
+    {{ form_label(form.save) }}
+    {{ form_widget(form.save) }}
+    {{  form_end(form) }} #}
+
+    {# {{ form(form) }} #}
+
+
+    {% if app.user %}
+    <a href="{{ path('logout') }}">logout</a>
+    {% endif %}
+
+    <a href="{{path('login')}}">awesome link</a>
+
+</div>
+
+{% endblock %}
+
+{% block javascripts %}
+
+{#    {{ parent() }}#}
+
+<script>
+{#    alert(2);#}
+{# let route = "{{ string|escape('js') }}"; #}
+// alert(route);
+
+</script>
+
+{% endblock %}

@@ -1,0 +1,18 @@
+{
+    "editor.fontSize": 15,
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "course",
+            "database": "symf6db",
+            "username": "root",
+            "password": "root1234"
+        }
+    ]
+}

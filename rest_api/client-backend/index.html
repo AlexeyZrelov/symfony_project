@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<!--    <script src="./libraries/axios.js"></script>-->
+    <script type="module" src="./app.js"></script>
+</head>
+
+<body>
+    <h1>Client backend (e.g part of online store that consumes API)</h1>
+
+    <p>
+        Add offer
+        <input id="url" type="text" placeholder="url" value="http://url.com">
+        <input id="price" type="text" placeholder="price" value="235">
+        <input id="currency" type="text" placeholder="currency" value="USD">
+        <select id="product">
+            <option value="">Choose product</option>
+        </select>
+        <input id="add-offer" type="button" value="Add">
+        <input id="upload-file" type="file" name="imageFile">
+    </p>
+
+    <p>
+        Delete offer
+        <select id="delete-offer">
+            <option value="">Choose offer</option>
+        </select>
+        <input id="delete-offer-button" type="button" value="Delete">
+
+    </p>
+
+    <p id="needs-login" class="display-none"></p>
+
+</body>
+
+</html>
